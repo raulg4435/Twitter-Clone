@@ -1,24 +1,23 @@
-# README
+# Summary
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application is a clone of Twitter, with the functionality to make posts to a page and have several users receive real-time feedback.
+It is made with Ruby and the Ruby on Rails framework.
 
-Things you may want to cover:
+# Tools Used
 
-* Ruby version
+* Ruby on Rails
+* [CableReady](https://cableready.stimulusreflex.com/) - tooling to interact w/DOM from backend; broadcasts DOM updates to many clients at once
+* [StimulusReflex](https://docs.stimulusreflex.com/) - triggers client-side DOM changes from server-side Ruby; enables UI to be highly responsive
 
-* System dependencies
+# Build Instructions
 
-* Configuration
+Make sure to have Ruby and Ruby on Rails installed on your machine.
 
-* Database creation
+```
+$ git clone git@github.com:raulg4435/Twitter-Clone.git  
+$ cd twitter_clone
+$ bundle
+$ rails server
+```
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The project will be hosted at `localhost:3000/posts` in your web-browser.
