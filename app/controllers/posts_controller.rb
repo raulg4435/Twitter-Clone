@@ -1,6 +1,8 @@
 class PostsController < ApplicationController
   include CableReady::Broadcaster
 
+  skip_before_action :verify_authenticity_token
+
   # GET /posts
   # GET /posts.json
   def index
