@@ -5,12 +5,13 @@ class PostsController < ApplicationController
   # GET /posts.json
   def index
     @posts = Post.all.order(created_at: :desc) # order Posts new->old
+    @post = Post.new
   end
 
   # POST /posts
   # POST /posts.json
   def create
-    @post = Post.new(post_params)
+    @post = Post.create(post_params)
     redirect_to posts_path
   end
 
