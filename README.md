@@ -17,6 +17,7 @@ Make sure to have Ruby and Ruby on Rails installed on your machine.
 $ git clone git@github.com:raulg4435/Twitter-Clone.git  
 $ cd twitter_clone
 $ bundle
+$ rails db:migrate
 $ rails server
 ```
 
