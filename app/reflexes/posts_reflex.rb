@@ -15,7 +15,7 @@ class PostsReflex < ApplicationReflex
 
   def like
     post = Post.find(element.dataset[:id])
-    post.increment! :reposts_count
+    post.increment! :likes_count
     cable_ready["timeline"].text_content(
       selector: "#post-#{post.id}-likes",
       text: post.likes_count

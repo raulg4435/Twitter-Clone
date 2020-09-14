@@ -23,6 +23,8 @@ class PostsController < ApplicationController
     redirect_to posts_path
   end
 
+  private
+
   # Only allow a list of trusted parameters through.
   def post_params
     params.require(:post).permit(:body)
