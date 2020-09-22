@@ -1,6 +1,6 @@
 # Summary
 
-This application is a clone of Twitter, with the functionality to make posts to a page and have several users receive real-time feedback.
+This application is a clone of Twitter, with the functionality to make posts to a page and have all active users receive real-time feedback.
 It is made with Ruby and the Ruby on Rails framework.
 
 # Tools Used
